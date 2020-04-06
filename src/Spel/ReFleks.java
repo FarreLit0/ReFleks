@@ -10,7 +10,7 @@ public class ReFleks extends Applet implements MouseListener {
     boolean started = false;
     boolean cheat;
     String info;
-    String reactionTime = "Klicka för att se din reaktionstid! ";
+    String reactionTime = "Klicka så fort rutan lyser rött för att se din reaktionstid! ";
      
     public void init() {
         addMouseListener(this);

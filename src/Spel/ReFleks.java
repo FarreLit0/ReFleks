@@ -47,6 +47,7 @@ public class ReFleks extends Applet implements MouseListener {
     public void mousePressed(MouseEvent e) {
         if (started) {              
             started = false;
+            end = System.currentTimeMillis();
             if (end < (start + randomTime)) {
                 reactionTime = "Du fuskade! Klicka för att börja om.";
                 cheat = true;
@@ -63,6 +64,7 @@ public class ReFleks extends Applet implements MouseListener {
     }    
      
     public void mouseMoved(MouseEvent e) {}
+    public void mouseDragged(MouseEvent e) {}
     public void mouseReleased(MouseEvent e) {}
     public void mouseClicked(MouseEvent e) {}
     public void mouseEntered(MouseEvent e) {}
